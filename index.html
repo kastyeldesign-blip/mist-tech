@@ -1,0 +1,617 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mist Tech — Designing the edges of tomorrow</title>
+  <meta name="description" content="Mist Tech crafts immersive, AI-driven worlds for studios and Web3 communities.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Inter+Tight:wght@300;400&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="icon" href="assets/logos/mist-mark.svg" type="image/svg+xml">
+</head>
+<body>
+  <a class="skip-link" href="#overview">Skip to content</a>
+
+  <!-- ============ Header: Nav Bar + Logo + Login components ============ -->
+  <header class="site-header" data-header>
+    <div class="blur-fade blur-fade--top site-header__fade" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <nav class="nav" data-nav aria-label="Primary">
+      <a class="nav__link is-active" href="#home" data-target="home">Home</a>
+      <a class="nav__link" href="#overview" data-target="overview">Studio</a>
+      <a class="nav__link" href="#journal" data-target="journal">Journal</a>
+      <a class="nav__link" href="#pipeline" data-target="pipeline">About us</a>
+      <a class="nav__link" href="#contact" data-target="contact">Contact</a>
+      <span class="nav__dot" data-nav-dot aria-hidden="true"><img src="assets/icons/nav-dot.svg" width="6" height="6" alt=""></span>
+    </nav>
+
+    <a class="site-header__logo" href="#home" aria-label="Mist Tech — home">
+      <img src="assets/logos/mist-logo-header.svg" width="127.478" height="44" alt="Mist Tech">
+    </a>
+
+    <div class="login">
+      <a class="login__link" href="#contact">Log in</a>
+      <a class="login__btn" href="#contact">Sign up</a>
+    </div>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>
+      <span class="menu-toggle__bar"></span><span class="menu-toggle__bar"></span>
+      <span class="visually-hidden">Menu</span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" data-mobile-menu hidden>
+    <nav class="mobile-menu__nav" aria-label="Mobile">
+      <a href="#home">Home</a>
+      <a href="#overview">Studio</a>
+      <a href="#journal">Journal</a>
+      <a href="#pipeline">About us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="login login--menu">
+      <a class="login__link" href="#contact">Log in</a>
+      <a class="login__btn" href="#contact">Sign up</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ============ Hero ============ -->
+    <section class="hero" id="home" data-section>
+      <div class="hero__media" aria-hidden="true">
+        <img class="hero__img" data-parallax="0.25" src="assets/img/hero.png" alt="">
+        <div class="hero__shade"></div>
+      </div>
+      <div class="blur-fade blur-fade--top hero__fade-top" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="blur-fade blur-fade--bottom hero__fade-bottom" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+      <div class="hero__intro" data-hero-in style="--d:.35s">
+        <p>Welcome to Mist</p>
+        <p>(01) Project development</p>
+      </div>
+
+      <!-- Hero - Engagement Stats -->
+      <div class="stats" data-hero-in style="--d:.5s">
+        <div class="stats__avatars" aria-hidden="true">
+          <img class="stats__avatar stats__avatar--back" src="assets/img/avatar-1.png" width="84" height="84" alt="">
+          <img class="stats__avatar stats__avatar--front" src="assets/img/avatar-2.png" width="84" height="84" alt="">
+        </div>
+        <div class="stats__body">
+          <p class="stats__num"><span data-count-to="12">+12</span>k<!--
+            Phones only: the pill becomes a button that pops the paragraph open
+            --><button class="stats__toggle" type="button" aria-expanded="false" aria-controls="stats-desc" aria-label="Read more about our work" data-stats-toggle>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 14a8 8 0 0 1-8 8"/><path d="M18 11v-1a2 2 0 0 0-2-2a2 2 0 0 0-2 2"/><path d="M14 10V9a2 2 0 0 0-2-2a2 2 0 0 0-2 2v1"/><path d="M10 9.5V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v10"/><path d="M18 11a2 2 0 1 1 4 0v3a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></svg>
+            </button></p>
+          <p class="stats__desc" id="stats-desc">Our work turns identity into atmosphere, balancing precision with emotion.<br>From structure to narrative, we craft how you’re seen, remembered, and experienced.</p>
+        </div>
+      </div>
+
+      <div class="hero__bottom">
+        <h1 class="hero__title">
+          <span class="line"><span style="--d:.15s">Designing the edges</span></span>
+          <span class="line"><span style="--d:.3s">of tomorrow.</span></span>
+        </h1>
+
+        <!-- Interactive Button -->
+        <a class="interactive-btn" href="#overview" data-hero-in style="--d:.75s">
+          <span class="interactive-btn__txt">Unfold the Story</span>
+          <span class="interactive-btn__icon" aria-hidden="true">
+            <img src="assets/icons/interactive-arrow.svg" width="62" height="62" alt="">
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ Overview Card ============ -->
+    <section class="overview" id="overview" data-section>
+      <div class="overview-card">
+        <div class="label" data-reveal>
+          <p class="label__small">Overview</p>
+          <p class="label__main">Breakthrough</p>
+        </div>
+        <div class="overview-card__body">
+          <p class="h3 overview-card__text" data-reveal-words>
+            <span>Our tools accelerate world-building without diluting creativity. We use machine learning to</span>
+            <span class="is-brand">generate spatial logic.</span>
+          </p>
+          <a class="sec-btn" href="#values" data-reveal style="--d:.2s">
+            <span class="sec-btn__icon" aria-hidden="true"><svg class="sec-btn__arrow" width="14" height="8" viewBox="0 0 14 8" fill="none"><path d="M9.30474 0.739442L11.8112 3.17435H0V4.22008H11.8112L9.30474 6.65495L10.0659 7.39441L13.8717 3.69722L10.0659 0L9.30474 0.739442Z" fill="currentColor"/></svg></span>
+            <span class="sec-btn__txt">More insight</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Values ============ -->
+    <section class="values" id="values">
+      <div class="values__inner">
+        <div class="values__head label label--md" data-reveal>
+          <p>At Mist Tech</p>
+          <p class="is-brand">We value creativity</p>
+        </div>
+
+        <ul class="values__list">
+          <li class="value-row" data-reveal>
+            <div class="label">
+              <p class="label__small">01</p>
+              <p class="label__main">Our Mission</p>
+            </div>
+            <p class="h3 value-row__text" data-hover-img="assets/img/value-architecture.jpg">Craft immersive AI-driven worlds</p>
+          </li>
+          <li class="rule" aria-hidden="true" data-reveal-line><img src="assets/icons/line-short.svg" width="853" height="1" alt=""></li>
+          <li class="value-row" data-reveal>
+            <div class="label">
+              <p class="label__small">02</p>
+              <p class="label__main">Our Vision</p>
+            </div>
+            <p class="h3 value-row__text" data-hover-img="assets/img/gallery-2.png">Elevate creativity through smart automation</p>
+          </li>
+          <li class="rule" aria-hidden="true" data-reveal-line><img src="assets/icons/line-short.svg" width="853" height="1" alt=""></li>
+          <li class="value-row" data-reveal>
+            <div class="label">
+              <p class="label__small">03</p>
+              <p class="label__main">Our Ambition</p>
+            </div>
+            <p class="h3 value-row__text" data-hover-img="assets/img/value-boots.jpg">Deliver scalable, production-ready environments</p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Floating image that follows the cursor over each value -->
+      <div class="hover-float" data-hover-float aria-hidden="true">
+        <div class="hover-float__frame">
+          <img alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Whereabouts + Gallery ============ -->
+    <section class="studio" id="studio">
+      <!-- Additional Info Card - Whereabouts -->
+      <div class="whereabouts">
+        <div class="whereabouts__item" data-reveal>
+          <div class="label"><p class="label__small is-brand">-</p><p class="label__main">Worldbuilding</p></div>
+          <p class="body">Transforming ideas into immersive 3D realities.</p>
+        </div>
+        <div class="whereabouts__item" data-reveal style="--d:.1s">
+          <div class="label"><p class="label__small is-brand">-</p><p class="label__main">Web 3</p></div>
+          <p class="body">Pioneering the next digital frontier.</p>
+        </div>
+        <div class="whereabouts__item" data-reveal style="--d:.2s">
+          <div class="label"><p class="label__small is-brand">-</p><p class="label__main">Post</p></div>
+          <p class="body">awkorp.st</p>
+        </div>
+      </div>
+
+      <!-- Project gallery: hover expands a panel and reveals its Image Info Card; click opens the project view.
+           Panels 1–3 card texts are placeholders (Figma only defines the "Industrial Realm" card). -->
+      <div class="gallery" data-gallery data-reveal-gallery>
+        <a class="gallery__panel gallery__panel--1" href="#studio" data-project data-project-id="night-protocol">
+          <img class="gallery__img" src="assets/img/gallery-1-ruins.jpg" alt="Figure in a white suit standing on a cliff above a ruined city">
+          <span class="image-card glass">
+            <span class="image-card__title">Night Protocol</span>
+            <span class="image-card__row">
+              <span class="image-card__label">Cyber XT01</span>
+              <span class="sec-btn sec-btn--light">
+                <span class="sec-btn__icon" aria-hidden="true"><svg class="sec-btn__arrow" width="14" height="8" viewBox="0 0 14 8" fill="none"><path d="M9.30474 0.739442L11.8112 3.17435H0V4.22008H11.8112L9.30474 6.65495L10.0659 7.39441L13.8717 3.69722L10.0659 0L9.30474 0.739442Z" fill="currentColor"/></svg></span>
+                <span class="sec-btn__txt">Check it out</span>
+              </span>
+            </span>
+          </span>
+        </a>
+        <a class="gallery__panel gallery__panel--2" href="#studio" data-project data-project-id="flooded-archive" style="--d:.1s">
+          <img class="gallery__img" src="assets/img/gallery-2-flooded-archive.jpg" alt="Lone figure in white techwear inside a flooded brutalist concrete hall">
+          <span class="image-card glass">
+            <span class="image-card__title">Flooded Archive</span>
+            <span class="image-card__row">
+              <span class="image-card__label">Cyber XT04</span>
+              <span class="sec-btn sec-btn--light">
+                <span class="sec-btn__icon" aria-hidden="true"><svg class="sec-btn__arrow" width="14" height="8" viewBox="0 0 14 8" fill="none"><path d="M9.30474 0.739442L11.8112 3.17435H0V4.22008H11.8112L9.30474 6.65495L10.0659 7.39441L13.8717 3.69722L10.0659 0L9.30474 0.739442Z" fill="currentColor"/></svg></span>
+                <span class="sec-btn__txt">Check it out</span>
+              </span>
+            </span>
+          </span>
+        </a>
+        <a class="gallery__panel gallery__panel--3" href="#studio" data-project data-project-id="red-meridian" style="--d:.2s">
+          <img class="gallery__img" src="assets/img/gallery-3-red-meridian.jpg" alt="Colossal concrete monolith split by a red light seam, a small figure at its base">
+          <span class="image-card glass">
+            <span class="image-card__title">Red Meridian</span>
+            <span class="image-card__row">
+              <span class="image-card__label">Cyber XT07</span>
+              <span class="sec-btn sec-btn--light">
+                <span class="sec-btn__icon" aria-hidden="true"><svg class="sec-btn__arrow" width="14" height="8" viewBox="0 0 14 8" fill="none"><path d="M9.30474 0.739442L11.8112 3.17435H0V4.22008H11.8112L9.30474 6.65495L10.0659 7.39441L13.8717 3.69722L10.0659 0L9.30474 0.739442Z" fill="currentColor"/></svg></span>
+                <span class="sec-btn__txt">Check it out</span>
+              </span>
+            </span>
+          </span>
+        </a>
+        <a class="gallery__panel gallery__panel--4 is-open" href="#studio" data-project data-project-id="industrial-realm" data-default style="--d:.3s">
+          <img class="gallery__img" src="assets/img/gallery-4.png" alt="Close-up of an industrial mechanical arm">
+          <img class="gallery__mark" src="assets/icons/quote-mark.svg" width="69" height="48.8203" alt="" aria-hidden="true">
+          <!-- Image Info Card -->
+          <span class="image-card glass">
+            <span class="image-card__title">Industrial Realm</span>
+            <span class="image-card__row">
+              <span class="image-card__label">Cyber XT09</span>
+              <span class="sec-btn sec-btn--light">
+                <span class="sec-btn__icon" aria-hidden="true"><svg class="sec-btn__arrow" width="14" height="8" viewBox="0 0 14 8" fill="none"><path d="M9.30474 0.739442L11.8112 3.17435H0V4.22008H11.8112L9.30474 6.65495L10.0659 7.39441L13.8717 3.69722L10.0659 0L9.30474 0.739442Z" fill="currentColor"/></svg></span>
+                <span class="sec-btn__txt">Check it out</span>
+              </span>
+            </span>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ Story / Journal ============ -->
+    <section class="story" id="journal" data-section>
+      <div class="story__row">
+        <!-- Floating Headline -->
+        <div class="floating-headline">
+          <p class="floating-headline__label" data-reveal>Our Process</p>
+          <div class="floating-headline__body">
+            <p class="h3" data-reveal style="--d:.1s">The Workflow</p>
+            <a class="sec-btn" href="#pipeline" data-reveal style="--d:.2s">
+              <span class="sec-btn__icon" aria-hidden="true"><svg class="sec-btn__arrow" width="14" height="8" viewBox="0 0 14 8" fill="none"><path d="M9.30474 0.739442L11.8112 3.17435H0V4.22008H11.8112L9.30474 6.65495L10.0659 7.39441L13.8717 3.69722L10.0659 0L9.30474 0.739442Z" fill="currentColor"/></svg></span>
+              <span class="sec-btn__txt">More insight</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="story__text">
+          <p class="story__kicker" data-reveal>We help tell stories</p>
+          <div class="story__copy">
+            <p data-reveal>At the junction of creativity and computation, we reinvent how digital worlds are imagined and experienced. Powered by next-gen systems like A.I. Spatial Forge,</p>
+            <p data-reveal>Procedural Core, and Realm Engine, our technology shapes immersive environments with unprecedented fidelity.</p>
+            <p data-reveal>Through breakthroughs in Generative Worldbuilding, Spatial Intelligence, and Adaptive Simulation, we elevate how you interact with digital space. We turn raw data into living ecosystems.</p>
+            <p data-reveal>Refining structure, enhancing atmosphere, and leveraging advanced pipelines to deliver a seamless, believable, and scalable virtual experience.</p>
+          </div>
+        </div>
+
+        <aside class="story__aside" data-reveal>
+          <img class="spark" src="assets/icons/spark.svg" width="8.98341" height="9.01216" alt="">
+          <p>Dedicated to advancing AI-driven worldbuilding for the Spatial Era.</p>
+        </aside>
+      </div>
+
+      <div class="story__rule" aria-hidden="true" data-reveal-line><img src="assets/icons/line-long.svg" width="1494" height="1" alt=""></div>
+
+      <div class="story__row story__row--2">
+        <div class="floating-headline">
+          <p class="floating-headline__label" data-reveal>Our End-Goal</p>
+          <div class="floating-headline__body">
+            <p class="h3" data-reveal style="--d:.1s">An impact that lasts</p>
+            <a class="sec-btn" href="#studio" data-reveal style="--d:.2s">
+              <span class="sec-btn__icon" aria-hidden="true"><svg class="sec-btn__arrow" width="14" height="8" viewBox="0 0 14 8" fill="none"><path d="M9.30474 0.739442L11.8112 3.17435H0V4.22008H11.8112L9.30474 6.65495L10.0659 7.39441L13.8717 3.69722L10.0659 0L9.30474 0.739442Z" fill="currentColor"/></svg></span>
+              <span class="sec-btn__txt">Our portfolio</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="story__text">
+          <p class="story__kicker" data-reveal>Projects crafted to live on</p>
+          <div class="story__copy">
+            <p data-reveal>Every project in our portfolio is built with one goal: to create digital worlds that leave a lasting mark.</p>
+            <p data-reveal>We don’t just generate environments. We engineer experiences designed to stay with people long after the screen fades.</p>
+            <p data-reveal>From atmospheric alleys to fully realized spatial ecosystems, each piece reflects our commitment to precision, emotion, and intelligent design.</p>
+            <p data-reveal>We push beyond aesthetics, shaping environments that communicate, immerse, and resonate.</p>
+            <p data-reveal>Mist Tech’s work isn’t made to impress for a moment.<br>It’s made to endure.</p>
+          </div>
+        </div>
+
+        <aside class="story__aside story__aside--medium" data-reveal>
+          <img class="spark" src="assets/icons/spark.svg" width="8.98341" height="9.01216" alt="">
+          <p>Committed to building digital worlds that are made to endure.</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ Crafted Worlds ============ -->
+    <section class="crafted" id="crafted">
+      <div class="crafted__intro">
+        <div class="crafted__copy">
+          <h2 class="h2" data-reveal>Crafted Worlds</h2>
+          <p class="body" data-reveal style="--d:.1s">Trusted by,<br>Studios &amp; Web3 Communities</p>
+        </div>
+        <a class="sec-btn sec-btn--light" href="#pipeline" data-reveal style="--d:.2s">
+          <span class="sec-btn__icon" aria-hidden="true"><svg class="sec-btn__arrow" width="14" height="8" viewBox="0 0 14 8" fill="none"><path d="M9.30474 0.739442L11.8112 3.17435H0V4.22008H11.8112L9.30474 6.65495L10.0659 7.39441L13.8717 3.69722L10.0659 0L9.30474 0.739442Z" fill="currentColor"/></svg></span>
+          <span class="sec-btn__txt">Our accomplishments</span>
+        </a>
+      </div>
+
+      <div class="logos" aria-label="Partners">
+        <div class="logos__track" data-marquee>
+          <ul class="logos__set">
+            <li><img src="assets/logos/partner-1.svg" width="98.7812" height="80.0253" alt="Partner logo"></li>
+            <li><img src="assets/logos/partner-2.svg" width="162.149" height="31.2296" alt="Partner logo"></li>
+            <li class="logo-combo logo-combo--3" role="img" aria-label="Partner logo">
+              <img class="p3a" src="assets/logos/partner-3a.svg" alt="">
+              <img class="p3b" src="assets/logos/partner-3b.svg" alt="">
+            </li>
+            <li class="logo-combo logo-combo--4" role="img" aria-label="Partner logo">
+              <img class="p4a" src="assets/logos/partner-4a.svg" alt="">
+              <img class="p4b" src="assets/logos/partner-4b.svg" alt="">
+            </li>
+            <li><img src="assets/logos/partner-5.svg" width="162" height="25" alt="Partner logo"></li>
+            <li><img src="assets/logos/partner-6.svg" width="103" height="56" alt="Partner logo"></li>
+            <li><img src="assets/logos/partner-7.svg" width="100" height="48" alt="Partner logo"></li>
+            <li><img src="assets/logos/partner-8.svg" width="122" height="57" alt="Partner logo"></li>
+            <li><img src="assets/logos/partner-9.svg" width="66" height="71" alt="Partner logo"></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Creation Pipeline ============ -->
+    <section class="pipeline" id="pipeline" data-section>
+      <div class="pipeline__content">
+        <div class="pipeline__top">
+          <div class="label" data-reveal>
+            <p class="label__small is-grey">Phase</p>
+            <p class="label__main">Ignition</p>
+          </div>
+          <div class="pipeline__phases">
+            <p data-reveal style="--d:.05s">Concept<br>Build<br>Deploy</p>
+            <p data-reveal style="--d:.15s">Design<br>Stimulate<br>Refine</p>
+            <p data-reveal style="--d:.25s">Generate<br>Enhance<br>Scale</p>
+          </div>
+          <div class="pipeline__rule" aria-hidden="true" data-reveal-line><img src="assets/icons/line-pipeline.svg" width="587" height="1" alt=""></div>
+          <div class="pipeline__intro">
+            <h2 class="h3" data-reveal>Our Creation Pipeline</h2>
+            <p class="body" data-reveal style="--d:.1s">Every world we build follows a focused, iterative process designed for clarity, speed, and impact. From the first concept to the final scalable environment, each phase ensures precision, coherence, and a world that feels alive.</p>
+          </div>
+        </div>
+
+        <div class="pipeline__bottom" data-reveal>
+          <p class="is-secondary">Development phase on two advanced systems that will redefine how digital worlds are created and experienced.</p>
+          <p>The world is changing.</p>
+        </div>
+      </div>
+
+      <div class="pipeline__media">
+        <img data-parallax="-0.08" src="assets/img/pipeline.png" alt="Figure in a white helmet making a peace sign">
+        <!-- Badges -->
+        <div class="explore" data-reveal>
+          <p class="explore__label">Explore The Project</p>
+          <div class="explore__badges" role="tablist" aria-label="Projects" data-badges>
+            <button class="badge" role="tab" aria-selected="false" type="button">ZT90</button>
+            <button class="badge is-active" role="tab" aria-selected="true" type="button">N’TX80</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============ Contact: pinned scroll sequence ============
+         Three layers share one spot. Scroll progress (0–1 through the section) drives them:
+         data-layer="in-start,in-end,out-start,out-end"   fades the layer in / out
+         data-words-range="start,end"                    lights its words one by one
+         data-done                                        point where the buttons appear -->
+    <section class="contact" id="contact" data-section data-scrub data-done="0.74" aria-labelledby="contact-title">
+      <div class="contact__pin">
+        <!-- Holographic 3D Mist mark (js/hologram.js). The flat mark shows if WebGL / three.js is unavailable. -->
+        <div class="hologram" data-hologram aria-hidden="true">
+          <img class="hologram__fallback" src="assets/logos/mist-mark.svg" width="43.6953" height="44" alt="">
+        </div>
+        <div class="contact__inner">
+          <p class="label__main">Get in touch</p>
+          <div class="contact__stage">
+            <div class="contact__layer" data-layer="-1,0,0.30,0.38">
+              <h2 class="contact__title" id="contact-title" data-reveal-words data-words-range="0,0.26">
+                <span>Every world starts with a single conversation.</span>
+                <span>Let’s design the edges of yours.</span>
+              </h2>
+            </div>
+            <div class="contact__layer" data-layer="0.36,0.40,0.62,0.70">
+              <p class="contact__hook" data-reveal-words data-words-range="0.40,0.54"><span>Let’s build together.</span></p>
+            </div>
+          <div class="contact__layer contact__actions">
+            <a class="contact__btn" href="mailto:hello@misttech.studio">Contact us</a>
+            <a class="sec-btn" href="mailto:hello@misttech.studio?subject=Whitelist%20sign-up" data-whitelist>
+              <span class="sec-btn__icon" aria-hidden="true"><svg class="sec-btn__arrow" width="14" height="8" viewBox="0 0 14 8" fill="none"><path d="M9.30474 0.739442L11.8112 3.17435H0V4.22008H11.8112L9.30474 6.65495L10.0659 7.39441L13.8717 3.69722L10.0659 0L9.30474 0.739442Z" fill="currentColor"/></svg></span>
+              <span class="sec-btn__txt">Sign up for the whitelist</span>
+            </a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer class="footer" id="footer">
+    <div class="footer__top">
+      <a class="footer__logo" href="#home" aria-label="Mist Tech — back to top" data-reveal>
+        <img src="assets/logos/mist-logo-footer.svg" width="99.9999" height="51.1968" alt="Mist Tech">
+      </a>
+
+      <div class="footer__cols">
+        <nav class="footer__col" aria-label="Pages" data-reveal>
+          <div class="footer__col-label"><p class="is-secondary">0.</p><p>Pages</p></div>
+          <ul class="footer__links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#overview">Studio</a></li>
+            <li><a href="#journal">Journal</a></li>
+            <li><a href="#pipeline">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__col" aria-label="Social" data-reveal style="--d:.1s">
+          <div class="footer__col-label"><p class="is-secondary">1.</p><p>Follow Us</p></div>
+          <ul class="footer__links">
+            <li><a href="#" rel="noopener">X</a></li>
+            <li><a href="#" rel="noopener">Youtube</a></li>
+            <li><a href="#" rel="noopener">OpenSea</a></li>
+            <li><a href="#" rel="noopener">Foundry</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <img src="assets/logos/mist-mark.svg" width="43.6953" height="44" alt="Mist Tech mark">
+      <ul class="footer__legal">
+        <li><a href="#">Website Policy</a></li>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Cookie Policy</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Project view (opened from a gallery panel) -->
+  <div class="project-view" data-project-view role="dialog" aria-modal="true" aria-labelledby="project-view-title" hidden>
+    <div class="project-view__media"><img data-pv-img alt=""></div>
+    <div class="project-view__info" data-pv-scroll>
+      <div class="project-view__head">
+        <button class="sec-btn project-view__close" type="button" data-pv-close>
+          <span class="sec-btn__icon project-view__back" aria-hidden="true"><svg class="sec-btn__arrow" width="14" height="8" viewBox="0 0 14 8" fill="none"><path d="M9.30474 0.739442L11.8112 3.17435H0V4.22008H11.8112L9.30474 6.65495L10.0659 7.39441L13.8717 3.69722L10.0659 0L9.30474 0.739442Z" fill="currentColor"/></svg></span>
+          <span class="sec-btn__txt">Back to the studio</span>
+        </button>
+        <div class="label">
+          <p class="label__small" data-pv-label></p>
+          <p class="label__main">Project</p>
+        </div>
+      </div>
+      <h2 class="project-view__title" id="project-view-title" data-pv-title></h2>
+      <div class="project-view__body" data-pv-body></div>
+    </div>
+  </div>
+
+  <!-- ============ Project write-ups ============
+       One <template> per gallery panel (matched by data-project-id). Edit the copy here. -->
+  <template data-project-details="night-protocol">
+    <p class="pv-intro">A vertical city after the collapse. Night Protocol follows a lone scout across a megastructure folding in on itself, built to test how far procedural destruction can go before a world stops feeling real.</p>
+    <dl class="pv-meta">
+      <div><dt>Year</dt><dd>2026</dd></div>
+      <div><dt>Discipline</dt><dd>Environment &amp; Narrative</dd></div>
+      <div><dt>Engine</dt><dd>Realm Engine</dd></div>
+    </dl>
+    <section class="pv-block">
+      <div class="label"><p class="label__small is-brand">01</p><p class="label__main">How it was made</p></div>
+      <div class="pv-block__content">
+        <p>We started from a single still: a figure on a ledge, a city falling away beneath. A.I. Spatial Forge blocked out more than 400 tower masses from height maps and fracture rules, then Procedural Core collapsed them along simulated fault lines, so every tilt and broken floor plate follows a believable load path.</p>
+        <p>Dust, rain and a low amber sun were layered last, pulling the scene back to one human scale: the scout, and the drop below.</p>
+      </div>
+    </section>
+    <section class="pv-block">
+      <div class="label"><p class="label__small is-brand">02</p><p class="label__main">Pipeline</p></div>
+      <ol class="pv-steps">
+        <li><p class="pv-steps__phase">Concept</p><p>Key frame, mood boards and a fracture grammar for the skyline.</p></li>
+        <li><p class="pv-steps__phase">Build</p><p>Procedural massing, collapse simulation and debris scattering.</p></li>
+        <li><p class="pv-steps__phase">Deploy</p><p>Light baking, volumetric fog and a real-time pass at 60 fps.</p></li>
+      </ol>
+    </section>
+    <section class="pv-block">
+      <div class="label"><p class="label__small is-brand">03</p><p class="label__main">Tech</p></div>
+      <ul class="pv-tech">
+        <li><span>A.I. Spatial Forge</span><span>Layout &amp; massing</span></li>
+        <li><span>Procedural Core</span><span>Fracture &amp; debris</span></li>
+        <li><span>Adaptive Simulation</span><span>Dust, rain &amp; wind</span></li>
+        <li><span>Realm Engine</span><span>Lighting &amp; real-time render</span></li>
+      </ul>
+    </section>
+  </template>
+
+  <template data-project-details="flooded-archive">
+    <p class="pv-intro">A data vault reclaimed by water. Flooded Archive treats silence as a material: a cathedral of raw concrete where the only signal left is a thin red line on the far wall.</p>
+    <dl class="pv-meta">
+      <div><dt>Year</dt><dd>2026</dd></div>
+      <div><dt>Discipline</dt><dd>Spatial Design</dd></div>
+      <div><dt>Engine</dt><dd>Realm Engine</dd></div>
+    </dl>
+    <section class="pv-block">
+      <div class="label"><p class="label__small is-brand">01</p><p class="label__main">How it was made</p></div>
+      <div class="pv-block__content">
+        <p>The hall was designed around one reflection. Spatial Intelligence studied the sightlines from the entrance so every pillar frames the figure, the red strip and its mirror in the water.</p>
+        <p>Concrete surfaces were generated from scanned formwork, then aged with Generative Worldbuilding passes for staining, seepage and growth at the waterline. The water is simulated, not painted, so the ripples answer every step.</p>
+      </div>
+    </section>
+    <section class="pv-block">
+      <div class="label"><p class="label__small is-brand">02</p><p class="label__main">Pipeline</p></div>
+      <ol class="pv-steps">
+        <li><p class="pv-steps__phase">Design</p><p>Sightline studies and a symmetrical column grid.</p></li>
+        <li><p class="pv-steps__phase">Stimulate</p><p>Water, fog and light shafts simulated together.</p></li>
+        <li><p class="pv-steps__phase">Refine</p><p>Material ageing and a restrained, cold colour grade.</p></li>
+      </ol>
+    </section>
+    <section class="pv-block">
+      <div class="label"><p class="label__small is-brand">03</p><p class="label__main">Tech</p></div>
+      <ul class="pv-tech">
+        <li><span>Spatial Intelligence</span><span>Composition &amp; sightlines</span></li>
+        <li><span>Generative Worldbuilding</span><span>Material ageing</span></li>
+        <li><span>Adaptive Simulation</span><span>Water &amp; fog</span></li>
+        <li><span>Realm Engine</span><span>Ray-traced reflections</span></li>
+      </ul>
+    </section>
+  </template>
+
+  <template data-project-details="red-meridian">
+    <p class="pv-intro">A monument with no maker. Red Meridian stages a single encounter: a colossal monolith split by light, and the one figure who walked far enough to reach it.</p>
+    <dl class="pv-meta">
+      <div><dt>Year</dt><dd>2026</dd></div>
+      <div><dt>Discipline</dt><dd>World Concept</dd></div>
+      <div><dt>Engine</dt><dd>Realm Engine</dd></div>
+    </dl>
+    <section class="pv-block">
+      <div class="label"><p class="label__small is-brand">01</p><p class="label__main">How it was made</p></div>
+      <div class="pv-block__content">
+        <p>Scale was the brief. The monolith was built at true size, over 600 metres tall, so the camera, the fog density and the height of a single figure could do the storytelling.</p>
+        <p>Procedural Core sculpted its weathered faces from erosion rules, while the red seam was treated as the scene's only light source, bleeding into the haze and across the wet salt flat below.</p>
+      </div>
+    </section>
+    <section class="pv-block">
+      <div class="label"><p class="label__small is-brand">02</p><p class="label__main">Pipeline</p></div>
+      <ol class="pv-steps">
+        <li><p class="pv-steps__phase">Generate</p><p>Erosion-driven sculpting of the monolith at real scale.</p></li>
+        <li><p class="pv-steps__phase">Enhance</p><p>Volumetric haze tuned to keep the seam readable at distance.</p></li>
+        <li><p class="pv-steps__phase">Scale</p><p>Streamed terrain, so the salt flat runs unbroken to the horizon.</p></li>
+      </ol>
+    </section>
+    <section class="pv-block">
+      <div class="label"><p class="label__small is-brand">03</p><p class="label__main">Tech</p></div>
+      <ul class="pv-tech">
+        <li><span>Procedural Core</span><span>Erosion &amp; sculpting</span></li>
+        <li><span>A.I. Spatial Forge</span><span>Terrain streaming</span></li>
+        <li><span>Adaptive Simulation</span><span>Weather &amp; cloud</span></li>
+        <li><span>Realm Engine</span><span>Volumetric light</span></li>
+      </ul>
+    </section>
+  </template>
+
+  <template data-project-details="industrial-realm">
+    <p class="pv-intro">Machine-scale detail, close enough to touch. Industrial Realm is a study in hard-surface design: the armour plating of a world built by machines, for machines.</p>
+    <dl class="pv-meta">
+      <div><dt>Year</dt><dd>2026</dd></div>
+      <div><dt>Discipline</dt><dd>Hard-Surface &amp; Materials</dd></div>
+      <div><dt>Engine</dt><dd>Realm Engine</dd></div>
+    </dl>
+    <section class="pv-block">
+      <div class="label"><p class="label__small is-brand">01</p><p class="label__main">How it was made</p></div>
+      <div class="pv-block__content">
+        <p>Every panel began as a sketch, then went through A.I. Spatial Forge to generate hundreds of plating variations that still read as one manufacturer.</p>
+        <p>Bevels, fasteners and maker's markings were placed procedurally along structural seams, and wear was driven by Adaptive Simulation: scuffs where parts move, grime where they don't.</p>
+      </div>
+    </section>
+    <section class="pv-block">
+      <div class="label"><p class="label__small is-brand">02</p><p class="label__main">Pipeline</p></div>
+      <ol class="pv-steps">
+        <li><p class="pv-steps__phase">Concept</p><p>Design language, part catalogue and markings.</p></li>
+        <li><p class="pv-steps__phase">Build</p><p>Generative panel variations and procedural fasteners.</p></li>
+        <li><p class="pv-steps__phase">Deploy</p><p>Wear simulation and macro-lens look development.</p></li>
+      </ol>
+    </section>
+    <section class="pv-block">
+      <div class="label"><p class="label__small is-brand">03</p><p class="label__main">Tech</p></div>
+      <ul class="pv-tech">
+        <li><span>A.I. Spatial Forge</span><span>Panel variations</span></li>
+        <li><span>Procedural Core</span><span>Bevels &amp; fasteners</span></li>
+        <li><span>Adaptive Simulation</span><span>Surface wear</span></li>
+        <li><span>Realm Engine</span><span>Macro look-dev</span></li>
+      </ul>
+    </section>
+  </template>
+
+  <script src="js/main.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.149.0/build/three.min.js" defer></script>
+  <script src="js/hologram.js" defer></script>
+</body>
+</html>
